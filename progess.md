@@ -14,4 +14,9 @@ e f g
 ### deduction
 there are 16 hour glasses in a 6*6 array
 four positions --> and four positions --|down
-
+hour glass 1 positions are
+[0][0],[0][1],[0][2]
+[1][1]
+[2][1],[2][1][2][2]
+add one to the x values to get the next hour glass 4 times
+add one to the y to get next level 4 times
