@@ -19,7 +19,7 @@ const dataArray = [
             +dataArray[i-1][j-1]
             +dataArray[i][j-2]+dataArray[i][j-1]+dataArray[i][j]
             allGlasses ++
-            glassSum>bigSum?bigSum=glassSum:bigSum=bigSum
+            bigSum = Math.max(glassSum,bigSum)
         }
     }
   }
