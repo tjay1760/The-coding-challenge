@@ -1,4 +1,4 @@
-let glassesArray = [];
+let bigSum = 0;
 let allGlasses = 0;
 const glassWidth = 3;
 const glassHeight =3;
@@ -19,8 +19,8 @@ const dataArray = [
             +dataArray[i-1][j-1]
             +dataArray[i][j-2]+dataArray[i][j-1]+dataArray[i][j]
             allGlasses ++
-            glassesArray.push(glassSum)
+            glassSum>bigSum?bigSum=glassSum:bigSum=bigSum
         }
     }
   }
-console.log(glassesArray.sort((a,b)=>(b-a))[0])
+console.log(bigSum)
