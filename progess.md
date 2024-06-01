@@ -20,3 +20,5 @@ hour glass 1 positions are
 [2][1],[2][1][2][2]
 add one to the x values to get the next hour glass 4 times
 add one to the y to get next level 4 times
+### Day 2 inheritance
+did hacker rank challenge to better understand how inheritance works in JS

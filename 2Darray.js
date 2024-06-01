@@ -27,3 +27,4 @@ for (let i = 0; i < dataArray.length; i++) {
   }
 }
 console.log(bigSum);
+
