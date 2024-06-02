@@ -1,8 +1,16 @@
 class Book {
-    constructor(title, price,author){
+    constructor(title, author){
 this. title = title
-this.price = price
 this.author = author
+    }
+    display(){
+        console.log(`no price given for ${this.book} :: ${this.title}`)
+    }
+}
+class MyBook extends Book {
+    constructor(title, author,price){
+        super(title, author)
+        this.price = price
     }
     display(){
         console.log(`Title : ${this.title}`)
@@ -10,3 +18,6 @@ this.author = author
         console.log(`Author : ${this.author}`)
     }
 }
+
+book = new MyBook("lords","Stephen King", 500)
+book.display();
