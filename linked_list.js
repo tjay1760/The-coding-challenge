@@ -25,3 +25,4 @@ class LinkedList{
 }
 let node1 = new ListNode(1)
 let node5 = new ListNode(5)
+node1.next = node5
