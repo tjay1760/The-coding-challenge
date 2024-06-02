@@ -23,3 +23,5 @@ class LinkedList{
         this.head = head
     }
 }
+let node1 = new ListNode(1)
+let node5 = new ListNode(5)
