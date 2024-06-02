@@ -20,4 +20,6 @@ class MyBook extends Book {
 }
 
 book = new MyBook("lords","Stephen King", 500)
+untiledBook = new Book ("unlisted","not me")
 book.display();
+untiledBook.display();
