@@ -32,3 +32,8 @@ write a Mybook class that
 ## Day 4 Linked list
 its been almost a year since i ran away from this data structure.
 now it is time to deal with it.
+-linked lists operate like arrays but are not stored in a specific index
+- each elements has a pointer to the next elem location
+the element (Node) has the data stored and a link
+data can be any type
+
