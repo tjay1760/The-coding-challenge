@@ -46,11 +46,14 @@ lastNode = lastNode.next
             
             console.log(lastNode)
     }
+    getFirst(){
+        console.log(this.head)
+    }
 }
 let node1 = new ListNode(1)
 let node5 = new ListNode(5)
 node1.next = node5
 
 let linkedList1 = new LinkedList(node1)
-linkedList1.getLast()
+linkedList1.getFirst()
 
