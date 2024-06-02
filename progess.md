@@ -22,3 +22,10 @@ add one to the x values to get the next hour glass 4 times
 add one to the y to get next level 4 times
 ### Day 2 inheritance
 did hacker rank challenge to better understand how inheritance works in JS
+
+## Day 3 abstract classes
+
+write a Mybook class that
+- inherits from Book
+- parameterised constructor taking (title, author, price)
+- impliments the Books display method to show the three params

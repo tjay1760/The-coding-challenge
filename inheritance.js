@@ -1,15 +1,3 @@
-'use strict';
-
-var _input = '';
-var _index = 0;
-process.stdin.on('data', (data) => { _input += data; });
-process.stdin.on('end', () => {
-    _input = _input.split(new RegExp('[ \n]+'));
-    main();    
-});
-function read() { return _input[_index++]; }
-
-/**** Ignore above this line. ****/
 
 class Person {
     constructor(firstName, lastName, identification) {
@@ -37,7 +25,7 @@ class Student extends Person {
     */
     // Write your constructor here
     constructor(firstName,lastName,id,scores){
-       super(firstName,lastName,id)
+       super(firstName,lastName,idNumber)
        this.testScores = scores
     }
 
@@ -48,7 +36,7 @@ class Student extends Person {
     // Write your method here
     
     calculate(){
-        console.log("testscores", this.scores)
+        console.log("testscores", this.testScores)
 if (this.testScores<=100 && this.testScores>=90 ){
     return "O"
 }else if (this.testScores<=90 && this.testScores>=80){
