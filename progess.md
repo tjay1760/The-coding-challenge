@@ -36,4 +36,7 @@ now it is time to deal with it.
 - each elements has a pointer to the next elem location
 the element (Node) has the data stored and a link
 data can be any type
+the entry point of the list is the head (elem of first node)
+last node points to null
+in an empty linked list the head is null
 
