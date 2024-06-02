@@ -31,11 +31,26 @@ count ++
         }
         console.log(count)
     }
+    clear(){
+        this.head = null
+    }
+    getLast(){
+        let lastNode = this.head
+        
+            if (lastNode){
+               while(lastNode.next){
+lastNode = lastNode.next
+               }
+
+            } 
+            
+            console.log(lastNode)
+    }
 }
 let node1 = new ListNode(1)
 let node5 = new ListNode(5)
 node1.next = node5
 
 let linkedList1 = new LinkedList(node1)
-linkedList1.size()
+linkedList1.getLast()
 
