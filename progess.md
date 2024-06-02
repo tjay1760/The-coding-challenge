@@ -29,3 +29,6 @@ write a Mybook class that
 - inherits from Book
 - parameterised constructor taking (title, author, price)
 - impliments the Books display method to show the three params
+## Day 4 Linked list
+its been almost a year since i ran away from this data structure.
+now it is time to deal with it.
