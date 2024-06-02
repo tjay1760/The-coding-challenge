@@ -14,7 +14,12 @@ const sample_list = {
 }
 class ListNode {
     constructor(value){
-        this.head = value
+        this.data = value
         this.next = null
+    }
+}
+class LinkedList{
+    constructor(head =null){
+        this.head = head
     }
 }
