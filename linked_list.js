@@ -26,3 +26,7 @@ class LinkedList{
 let node1 = new ListNode(1)
 let node5 = new ListNode(5)
 node1.next = node5
+
+let linkedList1 = new LinkedList(node1)
+
+console.log(linkedList1)
