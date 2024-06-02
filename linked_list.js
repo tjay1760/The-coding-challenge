@@ -12,3 +12,9 @@ const sample_list = {
         }
     }
 }
+class ListNode {
+    constructor(value){
+        this.head = value
+        this.next = null
+    }
+}
