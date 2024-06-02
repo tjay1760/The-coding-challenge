@@ -40,5 +40,6 @@ the entry point of the list is the head (elem of first node)
 last node points to null
 in an empty linked list the head is null
 adv --> elements can be easily added/ removed without reorgasising it
-
+dadv --> slow search operation more memory (pointers)
+can be singly, double or cyclic
 
