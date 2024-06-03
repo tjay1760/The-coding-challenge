@@ -57,6 +57,15 @@ lastNode = lastNode.next
         }
         currentNode.next = newNode
     }
+    removeNode(){
+        let currentNode = this.head
+        while (currentNode.next.next){
+            currentNode = currentNode.next
+        }
+       
+        currentNode.next = null
+       
+    }
 }
 let node1 = new ListNode(1)
 let node5 = new ListNode(5)
@@ -65,6 +74,8 @@ node1.next = node5
 let linkedList1 = new LinkedList(node1)
 linkedList1.addNode(50);
 linkedList1.addNode("yes");
-
+linkedList1.removeNode()
 console.log(linkedList1.head.next)
+
+
 
