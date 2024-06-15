@@ -44,4 +44,5 @@ dadv --> slow search operation more memory (pointers)
 can be singly, double or cyclic
 ### methods
 ### Day 6
+### Day 7
 
