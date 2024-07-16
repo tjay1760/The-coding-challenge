@@ -47,4 +47,7 @@ can be singly, double or cyclic
 ### Day 7
 ### Day 8
 ### Day 9
-
+### Day 10
+Key things in recursion 
+- what is the base case?
+- least amont of work required to reach the base case
