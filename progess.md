@@ -51,3 +51,4 @@ can be singly, double or cyclic
 Key things in recursion 
 - what is the base case?
 - least amont of work required to reach the base case
+- uderstand callstack to understand recursion
