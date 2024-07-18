@@ -52,3 +52,5 @@ Key things in recursion
 - what is the base case?
 - least amont of work required to reach the base case
 - uderstand callstack to understand recursion
+uses implicit stack (has a con of memory issues)
+benefit can redce time complexity using memoization
