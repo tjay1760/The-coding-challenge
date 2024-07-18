@@ -52,5 +52,8 @@ Key things in recursion
 - what is the base case?
 - least amont of work required to reach the base case
 - uderstand callstack to understand recursion
+- each new call to the recursion method is added to the top of the stack.
+when eend condition is met the methods start being poped off the callstack
 uses implicit stack (has a con of memory issues)
 benefit can redce time complexity using memoization
+good with recursive DS sch as trees and graphs
