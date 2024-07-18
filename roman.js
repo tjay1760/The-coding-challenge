@@ -20,3 +20,8 @@ const romanNumbers = [
     { roman: "MMM", integer: 3000 },
     { roman: "MCMXCIV", integer: 1994 }
 ];
+const romanToInt =(roman)=>{
+console.log(roman[0])
+}
+const index = Math.floor(Math.random()*romanNumbers.length)
+romanToInt(romanNumbers[index].roman)
