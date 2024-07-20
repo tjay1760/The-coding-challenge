@@ -29,6 +29,22 @@ const baseRomanValues = {
     "D": 500,
     "M": 1000
 };
+const romanBuilder = [
+    { number: 1000, roman: 'M' },
+    { number: 900, roman: 'CM' },
+    { number: 500, roman: 'D' },
+    { number: 400, roman: 'CD' },
+    { number: 100, roman: 'C' },
+    { number: 90, roman: 'XC' },
+    { number: 50, roman: 'L' },
+    { number: 40, roman: 'XL' },
+    { number: 10, roman: 'X' },
+    { number: 9, roman: 'IX' },
+    { number: 5, roman: 'V' },
+    { number: 4, roman: 'IV' },
+    { number: 1, roman: 'I' }
+]
+
 const index = Math.floor(Math.random()*romanNumbers.length)
 const romanToInt =(roman)=>{
     let convertedRoman=0;
@@ -45,5 +61,16 @@ const romanToInt =(roman)=>{
     console.log(romanNumbers[index])
 console.log(convertedRoman)
 }
+const intToRoman =(number)=>{
+    let theRoman =""
+    while(number>=1000){
+        console.log("M")
+        number-=1000
+    }
 
-romanToInt(romanNumbers[index].roman)
+
+
+}
+
+// romanToInt(romanNumbers[index].roman)
+intToRoman(3000)
