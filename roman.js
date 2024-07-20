@@ -32,7 +32,14 @@ const baseRomanValues = {
 const index = Math.floor(Math.random()*romanNumbers.length)
 const romanToInt =(roman)=>{
     let convertedRoman=0;
+
     for(let i=0;i<roman.length;i++){
+        if(baseRomanValues[roman[i]]<baseRomanValues[roman[i+1]]){
+            console.log("inverted")
+            convertedRoman+= baseRomanValues[roman[i+1]] - baseRomanValues[roman[i]]
+            i++;
+            continue;
+        }
         convertedRoman+=baseRomanValues[roman[i]]
     }
     console.log(romanNumbers[index])
