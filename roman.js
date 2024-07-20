@@ -29,13 +29,14 @@ const baseRomanValues = {
     "D": 500,
     "M": 1000
 };
-
+const index = Math.floor(Math.random()*romanNumbers.length)
 const romanToInt =(roman)=>{
     let convertedRoman=0;
     for(let i=0;i<roman.length;i++){
-        console.log(baseRomanValues[roman[i]])
+        convertedRoman+=baseRomanValues[roman[i]]
     }
-
+    console.log(romanNumbers[index])
+console.log(convertedRoman)
 }
-const index = Math.floor(Math.random()*romanNumbers.length)
+
 romanToInt(romanNumbers[index].roman)
