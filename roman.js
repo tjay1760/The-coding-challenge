@@ -31,7 +31,11 @@ const baseRomanValues = {
 };
 
 const romanToInt =(roman)=>{
-console.log(baseRomanValues[roman[0]])
+    let convertedRoman=0;
+    for(let i=0;i<roman.length;i++){
+        console.log(baseRomanValues[roman[i]])
+    }
+
 }
 const index = Math.floor(Math.random()*romanNumbers.length)
 romanToInt(romanNumbers[index].roman)
