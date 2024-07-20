@@ -63,10 +63,12 @@ console.log(convertedRoman)
 }
 const intToRoman =(number)=>{
     let theRoman =""
-    while(number>=1000){
-        console.log("M")
-        number-=1000
-    }
+   for(let i=0;i<romanBuilder.length;i++){
+while(number>=romanBuilder[i].number){
+console.log(romanBuilder[i].number)
+number-= romanBuilder[i].number;
+}
+   }
 
 
 
