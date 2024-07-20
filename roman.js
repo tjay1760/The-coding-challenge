@@ -62,17 +62,16 @@ const romanToInt =(roman)=>{
 console.log(convertedRoman)
 }
 const intToRoman =(number)=>{
+    let initNumber = number
     let theRoman =""
    for(let i=0;i<romanBuilder.length;i++){
 while(number>=romanBuilder[i].number){
-console.log(romanBuilder[i].number)
+theRoman+=romanBuilder[i].roman
 number-= romanBuilder[i].number;
 }
    }
-
-
-
+   console.log(initNumber,"::",theRoman, "Correct::",romanNumbers[index].roman)
 }
 
 // romanToInt(romanNumbers[index].roman)
-intToRoman(3000)
+intToRoman(romanNumbers[index].integer);
