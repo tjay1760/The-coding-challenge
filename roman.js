@@ -66,12 +66,10 @@ const intToRoman =(number)=>{
     let theRoman =""
    for(let i=0;i<romanBuilder.length;i++){
 while(number>=romanBuilder[i].number){
-theRoman+=romanBuilder[i].roman
+theRoman+=romanBuilder[i].roman;
 number-= romanBuilder[i].number;
 }
    }
    console.log(initNumber,"::",theRoman, "Correct::",romanNumbers[index].roman)
 }
-
-// romanToInt(romanNumbers[index].roman)
 intToRoman(romanNumbers[index].integer);
