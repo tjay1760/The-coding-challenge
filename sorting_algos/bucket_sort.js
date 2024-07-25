@@ -7,6 +7,11 @@ const bucketSort = (arr,numBuckets)=>{
 const index = Math.floor((val/maxVal)* (numBuckets-1))
 buckets[index].push(val)
     })
-console.log(buckets)
+const sortedArray =[];
+buckets.forEach((bucket)=>{
+    bucket.sort((a,b)=>a-b)
+    sortedArray.push(...bucket);
+})
+console.log(sortedArray)
 }   
 bucketSort(numbersArray,5);
