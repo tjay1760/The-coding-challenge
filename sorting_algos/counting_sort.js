@@ -7,4 +7,13 @@ for(let i=0;i<countArray.length;i++){
    const countAtIndex = numbersArray.filter((val)=>val===i).length
    countArray[i] = countAtIndex
 }
-console.log(countArray);
+const sortedArray = [];
+for(let i =0;i<countArray.length;i++){
+    if(countArray[i]>0){
+        for(let c=0;c<countArray[i];c++){
+            sortedArray.push(i)
+        }
+    }
+}
+console.log(sortedArray)
+
