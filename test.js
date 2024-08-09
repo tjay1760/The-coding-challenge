@@ -1,2 +1,2 @@
 const arraytest = Array(5).fill("x");
-console.log(arraytest);
+console.log((107/4000)*100);
