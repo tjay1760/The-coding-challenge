@@ -58,4 +58,4 @@ uses implicit stack (has a con of memory issues)
 benefit can redce time complexity using memoization
 good with recursive DS sch as trees and graphs
 ### Day 11 - currying
-currying allos the creation of specialized functions from a ggeneric case
+currying allos the creation of specialized functions from a generic case
