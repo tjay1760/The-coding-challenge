@@ -59,3 +59,5 @@ benefit can redce time complexity using memoization
 good with recursive DS sch as trees and graphs
 ### Day 11 - currying
 currying allos the creation of specialized functions from a generic case
+you can derive functions from the carryed function
+carrying can also help one create higher order functions
