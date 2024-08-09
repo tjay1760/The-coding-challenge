@@ -57,4 +57,5 @@ when eend condition is met the methods start being poped off the callstack
 uses implicit stack (has a con of memory issues)
 benefit can redce time complexity using memoization
 good with recursive DS sch as trees and graphs
-### Day 11
+### Day 11 - currying
+
