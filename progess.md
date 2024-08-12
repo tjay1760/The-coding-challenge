@@ -61,3 +61,4 @@ good with recursive DS sch as trees and graphs
 currying allos the creation of specialized functions from a generic case
 you can derive functions from the carryed function
 carrying can also help one create higher order functions
+### Day 12
