@@ -28,11 +28,10 @@ const changeCounter = (change) => {
   }
 
   const tempCid = cid.map(([name, amount]) => [name, amount]);
-
+cconsole.log(tempCid)
   for (let i = 0; i < currencyUnits.length; i++) {
     const [unitName, unitValue] = currencyUnits[i];
     let unitAmount = 0;
-
     while (remainingChange >= unitValue && tempCid.find(item => item[0] === unitName)[1] > 0) {
       unitAmount += unitValue;
       remainingChange = Math.round((remainingChange - unitValue) * 100) / 100;
