@@ -1,3 +1,8 @@
-const sum = (a) =>(b) =>(c)=>a+b+c;
-console.log(sum (1)(2)(3));
 
+const person ={
+    name:"tjay",
+    sayMyName: function (name){
+        console.log(this.name)
+    }
+}
+person.sayMyName()
