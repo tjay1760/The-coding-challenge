@@ -10,7 +10,11 @@ const person ={
         console.log(this.name)
     }
 }
-sayMyName2.call(person)
+function Person (name){
+    this.name = name
+    }
 
-// person.sayMyName()
-sayMyName.call(person)
+john = new Person (`tjay`)
+
+globalThis.name = 'mikey'
+sayMyName();
