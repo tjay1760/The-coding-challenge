@@ -1,15 +1,4 @@
-function sayMyName (name){
-    console.log(`my name is ${this.name}`)
-}
-const sayMyName2 =(name)=>{
-    console.log(`my name is ${this.name}`)
-}
-const person ={
-    name:"tjay",
-    sayMyName: function (name){
-        console.log(this.name)
-    }
-}
+
 function Person (firstname, lastname){
     this.firstname = firstname
     this.lastname = lastname
@@ -23,9 +12,19 @@ function SuperHero (firstname,lastname){
     Person.call(this,firstname,lastname)
     this.superhero =true
 }
+SuperHero.prototype = Object.create(Person.prototype)
+// SuperHero.prototype.constructor = SuperHero;
+
 SuperHero.prototype.fight = function (){
     console.log('fighting')
 } 
-SuperHero.prototype = Object.create(Person.prototype)
+SuperHero.prototype.checkhero = function (){
+    if (this.superhero){
+        console.log(`${this.firstname}  ${this.lastname} is a Hero`)
+    }
+}
+
 const marvel = new SuperHero("black","widow")
-marvel.getName()
+const tjay = new Person("John","Murianki");
+// marvel.fight();
+marvel.checkhero()
