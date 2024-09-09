@@ -1,12 +1,23 @@
-const numbers = ["a","b","c","d","e"]
-const obj ={
-    1:"one",
-    2:"two",
-    3:"three",
-    4:"four",
-    5:"five"
+const obj = {
+    [Symbol.iterator]:function (){
+        let step = 0;
+const iterator = {
+    next: function (){
+        step++
+        if (step ===1){
+            return {value:'Hello', done:false}
+        }else if(step===2){
+            return {value:'World', done:false}
+        }
+        
+        return    {value:undefined, done:true}
+        
+    }
 }
-for (const num in obj){
-    console.log(num)
+return iterator
+    }
+    
 }
-// numbers.forEach((num)=>console.log(num))
+for (const i of obj){
+console.log(i)
+}
