@@ -63,6 +63,16 @@ you can derive functions from the carryed function
 carrying can also help one create higher order functions
 ### Day 12
 In javascript classes are basically syntatic sugar for prototype inheritance
+### Day 13
+functional Progreamming
+includes
+--> Isolated functions (dont depend on program state including global variables)
+--> the the otput is always the same with the same input
+--> fxns with limited effects (any changes to the state of the progrgam are careflly controlled)
+first class fxns --> fxs that can be assigned to avariable passed to athoer fxns and returned
+higher order fxns --> fxns that can taek params
+lambdas --> fxns that can be passed to other fxns and returned from them
+
 
 
 
