@@ -71,7 +71,15 @@ includes
 --> fxns with limited effects (any changes to the state of the progrgam are careflly controlled)
 first class fxns --> fxs that can be assigned to avariable passed to athoer fxns and returned
 higher order fxns --> fxns that can taek params
-lambdas --> fxns that can be passed to other fxns and returned from them
+lambdas --> fxns that can be passed to other fxns and returned from them;
+mutation refers to the changing or altering of things 
+the otcome of a mutation is a side effect
+function should not have side effects
+declare your dependencies implicitly (pass any variable that a function depends on)
+why --> it is easier to test
+while always produce the same output for the same inputs
+dont alter array or object
+use concat instead of pshing gon the original array
 
 
 
