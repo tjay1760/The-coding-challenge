@@ -80,6 +80,7 @@ why --> it is easier to test
 while always produce the same output for the same inputs
 dont alter array or object
 use concat instead of pshing gon the original array
+use arr.findIndex to find the index of an array it return -1 if it is not found
 
 
 
