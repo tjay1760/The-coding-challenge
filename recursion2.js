@@ -24,4 +24,10 @@ const decimalToBinary =(num)=>{
   return decimalToBinary(Math.floor(num/2))+num%2
     
 }
-console.log(decimalToBinary(10))
+const sumOfNaturalNumbers =(num) =>{
+if (num==1){
+    return 1
+}
+return sumOfNaturalNumbers(num-1)+ num
+}
+console.log(sumOfNaturalNumbers(10))
