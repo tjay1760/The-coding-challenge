@@ -43,4 +43,10 @@ if ( toFind<arr[mid]){
 }
 return binarySearch(arr,mid,right,toFind)
 }
-console.log(binarySearch([1,2,3,4,5,6,7,8,9],0,8,2))
+const fibonnacci = (num)=>{
+if (num===1||num===2){
+    return num
+}
+return fibonnacci(num-1)+fibonnacci(num-2)
+}
+console.log(fibonnacci(10))
