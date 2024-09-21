@@ -5,15 +5,15 @@ const reverseString =(str)=>{
     }
     return reverseString(str.slice(1)) + str[0]
 }
+const isPalindrome = (str)=>{
+if (str.length<=1){
+    return true;
+}
+if (str[0]===str[str.length-1]){
+    console.log(str[str.length-2])
+    return isPalindrome(str.slice(1,str.length-1))
+}
+return false
+}
 
-console.log(reverseString("hello"))
-/*
-motion 
-call 1 returns --> reverseString("ello") + "h" adds to callstack
-call 2 returns --> reverseString("llo") +"e" adds to callstack
-call 3 returns --> reverseString("lo") +"l" adds to callstack
-call 4 returns --> reverseString("o") +"l" adds to callstack
-call 5 returns --> reverseString("") +"o" adds to callstack
-reverseString("") +"o" is popped off callstack return is "o"
-reverseString("o") +"l" is popped from call stack return is "l"  
-*/
+console.log(isPalindrome("hlabfalh"))
