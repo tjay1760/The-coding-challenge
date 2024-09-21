@@ -30,4 +30,17 @@ if (num==1){
 }
 return sumOfNaturalNumbers(num-1)+ num
 }
-console.log(sumOfNaturalNumbers(10))
+const binarySearch = (arr, left,right,toFind)=>{
+    let mid = (left+right)/2
+if (left>right){
+    return -1
+}
+if(toFind===arr[mid]){
+    return mid
+}
+if ( toFind<arr[mid]){
+    return binarySearch(arr,left,mid,toFind)
+}
+return binarySearch(arr,mid,right,toFind)
+}
+console.log(binarySearch([1,2,3,4,5,6,7,8,9],0,8,2))
