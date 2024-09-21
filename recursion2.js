@@ -1,4 +1,4 @@
-// Reverse string
+
 const reverseString =(str)=>{
     if (str==''){
         return ""
@@ -10,10 +10,18 @@ if (str.length<=1){
     return true;
 }
 if (str[0]===str[str.length-1]){
-    console.log(str[str.length-2])
     return isPalindrome(str.slice(1,str.length-1))
 }
 return false
 }
-
-console.log(isPalindrome("hlabfalh"))
+const decimalToBinary =(num)=>{
+    if (num ===0){
+        return "0"
+    }
+    if (num ===1){
+        return "1"
+    }
+  return decimalToBinary(Math.floor(num/2))+num%2
+    
+}
+console.log(decimalToBinary(10))
