@@ -11,4 +11,17 @@ return
    return output
 }
 
+const flatten =(arr)=>{
+    if(arr.length ===0){
+        return []
+    }
+    const[element, ...rest] = arr;
+    if(Array.isArray(element)){
+return [...flatten(element),...flatten(rest)]
+    }
+    return [element, ...flatten(rest)]
+
+}
+flatten([ 1, 2, 3, [ [ 4 ] ] ])
+
 console.log(steamrollArray([1, [2], [3, [[4]]]]));
