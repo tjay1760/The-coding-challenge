@@ -22,3 +22,4 @@ const Person = function(first, last) {
       lName = last
   }
   };
+  // use of getters and setters prevents one from accessing the variables from outsite
