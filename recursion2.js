@@ -45,8 +45,8 @@ return binarySearch(arr,mid,right,toFind)
 }
 const fibonnacci = (num)=>{
 if (num===1||num===2){
-    return num
+    return 1
 }
 return fibonnacci(num-1)+fibonnacci(num-2)
 }
-console.log(fibonnacci(10))
+
