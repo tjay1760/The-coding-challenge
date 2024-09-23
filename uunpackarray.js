@@ -2,13 +2,11 @@
 const output = []
 function steamrollArray(arr) {
    arr.forEach(element => {
-    if (typeof element === "number"){
-        output.push(element)
+    if(!Array.isArray(element)){
+output.push(element)
+return
     }
-    if(Array.isArray(element)){
-steamrollArray(element)
-    }
-    
+    steamrollArray(element)    
    });
    return output
 }
